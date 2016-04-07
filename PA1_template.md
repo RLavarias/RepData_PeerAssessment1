@@ -25,7 +25,7 @@ steps_date <- aggregate(steps ~ date, data = activity, FUN = sum)
 hist(steps_date$steps, main="Total Steps Per Day", xlab = "Steps", ylab = "Frequency")
 ```
 
-![](RepData_PeerAssessment1/PA1_template_files/Repro1.png)
+![](/PA1_template_files/Repro1.png)
 
 Then calculate the mean and the median:
 
@@ -45,7 +45,7 @@ steps_interval <- aggregate(steps ~ interval, data = activity, FUN = mean)
 plot(steps_interval$interval, steps_interval$steps, type="l", xlab="Interval", ylab="Number of Steps", main="Average Number of Steps per 5 Minute Interval")
 ```
 
-![](RepData_PeerAssessment1/PA1_template_files/Repro2.png)
+![](/PA1_template_files/Repro2.png)
 
 To determine which 5-minute interval, on average across all the days contains the maximum number of steps:
 
@@ -60,7 +60,7 @@ First calculate the total number of missing values:
 
 ``` {r}
 sum(is.na(activity))
-
+## [1] 2304
 ```
 
 The strategy I will use to fill in the missing data from the data sets is using the means of the 5 minute intervals 
@@ -79,7 +79,7 @@ steps_date <- aggregate(steps ~ date, data = activity, FUN = sum)
 hist(steps_date$steps, main = "Total Steps Each Day", xlab = "Frequency", ylab = "Number of Steps")
 ```
 
-![](RepData_PeerAssessment1/PA1_template_files/Repro3.png)
+![](/PA1_template_files/Repro3.png)
 
 Obtain the mean and the median of the total steps per day:
 
@@ -117,4 +117,4 @@ for (type in c("weekend", "weekday")) {
   plot(steps_type, type = "l", main = type)
 }
 ```
-!(RepData_PeerAssessment1/PA1_template_files/Repro4.png)
+!(/PA1_template_files/Repro4.png)
