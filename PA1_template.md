@@ -25,7 +25,7 @@ steps_date <- aggregate(steps ~ date, data = activity, FUN = sum)
 hist(steps_date$steps, main="Total Steps Per Day", xlab = "Steps", ylab = "Frequency")
 ```
 
-![](PA1_template_files/figure-html/Repro1.png)
+![](RepData_PeerAssessment1/PA1_template_files/Repro1.png)
 
 Then calculate the mean and the median:
 
@@ -45,7 +45,7 @@ steps_interval <- aggregate(steps ~ interval, data = activity, FUN = mean)
 plot(steps_interval$interval, steps_interval$steps, type="l", xlab="Interval", ylab="Number of Steps", main="Average Number of Steps per 5 Minute Interval")
 ```
 
-![](PA1_template_files/figure-html/Repro2.png)
+![](RepData_PeerAssessment1/PA1_template_files/Repro2.png)
 
 To determine which 5-minute interval, on average across all the days contains the maximum number of steps:
 
@@ -79,7 +79,7 @@ steps_date <- aggregate(steps ~ date, data = activity, FUN = sum)
 hist(steps_date$steps, main = "Total Steps Each Day", xlab = "Frequency", ylab = "Number of Steps")
 ```
 
-![](PA1_template_files/figure-html/Repro3.png)
+![](RepData_PeerAssessment1/PA1_template_files/Repro3.png)
 
 Obtain the mean and the median of the total steps per day:
 
@@ -117,4 +117,4 @@ for (type in c("weekend", "weekday")) {
   plot(steps_type, type = "l", main = type)
 }
 ```
-!(PA1_template_files/figure-html/Repro4.png)
+!(RepData_PeerAssessment1/PA1_template_files/Repro4.png)
