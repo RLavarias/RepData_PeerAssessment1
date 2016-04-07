@@ -117,4 +117,4 @@ for (type in c("weekend", "weekday")) {
   plot(steps_type, type = "l", main = type)
 }
 ```
-!(/PA1_template_files/Repro4.png)
+![](/PA1_template_files/Repro4.png)
