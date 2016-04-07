@@ -31,9 +31,9 @@ Then calculate the mean and the median:
 
 ``` {r}
 mean(steps_date$steps)
-
+## [1] 10766.19
 median(steps_date$steps)
-
+## [1] 10765
 ```
 
 ## What is the average daily activity pattern?
@@ -85,10 +85,10 @@ Obtain the mean and the median of the total steps per day:
 
 ``` {r}
 mean(steps_date$steps)
-
+## [1] 10766.19
 
 median(steps_date$steps)
-
+## [1] 10766.19
 ```
 
 Showing the impact of the missing data is minimal
